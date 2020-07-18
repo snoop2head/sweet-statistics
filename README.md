@@ -8,29 +8,6 @@ Paring statistics concepts with real-life examples based on three questions.
 
 
 
-## KBO 용병 외국인 투수 성적 예측
-
-statcast 데이터의 1) 구종 개수와 2) 아웃확률로 기존에 성공한 외국인 투수 성적들을 바탕으로 새로 들어온 외국인 투수를 평가한다
-
-### Key Notes
-
-* 아웃확률은 음이항분포로 정의함
-* 이항분포는 시행횟수를 고정해서 아웃을 몇 번 성공했냐를 봄
-* **음이항분포는성공 횟수를 고정해서, 시행횟수를 몇 번 시행해야만 하냐를 봄**
-
-![image-20200718121934552](./images/image-20200718121934552.png)
-
-* 여기서 3번의 아웃이 성공하기 위해 상대한 타자의 수가 X임
-
-![image-20200718122011345](./images/image-20200718122011345.png)
-
-### Reference
-
-* [YouTube Video: Code Explanation](https://www.youtube.com/watch?v=xExpvGsmLzE)
-* [Paper: Modeling Pitcher Performance and the Distribution of Runs per Inning in Major League Baseball](./papers/modeling_pitcher_performance.pdf)
-
-
-
 ## Movie Recommendation Algorithm
 
 Using pearson correlation to get similar movies based on user's ratings
@@ -71,4 +48,29 @@ def person_r_value(movie1_ratings, movie2_ratings):
 * [Youtube Video](https://www.youtube.com/watch?v=mLwMe4KUZz8)
 * [Naked Statistics | Chapter 4: How does Netflix know what movies I like?](https://www.academia.edu/15178144/Naked_Statistics)
 * [Jupyter Notebook: Code](https://github.com/snoop2head/pd_bamboo_forest/blob/master/Movie-recommendation-algorithm.ipynb)
+
+
+
+## KBO 용병 외국인 투수 성적 예측
+
+statcast 데이터의 1) 구종 개수와 2) 아웃확률로 기존에 성공한 외국인 투수 성적들을 바탕으로 새로 들어온 외국인 투수를 평가한다
+
+### Key Notes
+
+* 아웃확률은 음이항분포로 정의함
+* 이항분포는 시행횟수를 고정해서 아웃을 몇 번 성공했냐를 봄
+* **음이항분포는성공 횟수를 고정해서, 시행횟수를 몇 번 시행해야만 하냐를 봄**
+
+![image-20200718121934552](./images/image-20200718121934552.png)
+
+* 여기서 3번의 아웃이 성공하기 위해 상대한 타자의 수가 X임
+
+![image-20200718122011345](./images/image-20200718122011345.png)
+
+### Reference
+
+* [YouTube Video: Code Explanation](https://www.youtube.com/watch?v=xExpvGsmLzE)
+* [Paper: Modeling Pitcher Performance and the Distribution of Runs per Inning in Major League Baseball](./papers/modeling_pitcher_performance.pdf)
+
+
 
